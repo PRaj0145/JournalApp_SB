@@ -1,11 +1,9 @@
 package com.rootZero.journalApp.cache;
-
 import com.rootZero.journalApp.entity.ConfigJournalAppEntity;
 import com.rootZero.journalApp.repository.ConfigJournalAppRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,7 +19,7 @@ public class AppCache {
    @Autowired
    private ConfigJournalAppRepository configJournalAppRepository;
 
-    public Map<String, String> appCache;
+    public Map<String,String> appCache;
 
     @PostConstruct
 

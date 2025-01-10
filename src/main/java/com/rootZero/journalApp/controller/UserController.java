@@ -6,7 +6,7 @@ import com.rootZero.journalApp.entity.User;
 import com.rootZero.journalApp.repository.UserRepository;
 import com.rootZero.journalApp.service.UserService;
 
-import com.rootZero.journalApp.service.WheatherService;
+import com.rootZero.journalApp.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.HttpStatus;
@@ -26,7 +26,7 @@ public class UserController {
    private UserRepository userRepository;
 
     @Autowired
-    private WheatherService weatherService;
+    private WeatherService weatherService;
 
    @PutMapping
     public ResponseEntity<?> updateUser(@RequestBody User user) {
