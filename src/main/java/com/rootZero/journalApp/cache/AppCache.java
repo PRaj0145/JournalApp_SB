@@ -19,7 +19,7 @@ public class AppCache {
    @Autowired
    private ConfigJournalAppRepository configJournalAppRepository;
 
-    public Map<String,String> appCache;
+    public  Map<String,String> appCache;
 
     @PostConstruct
 
